@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-stylesheet type="text/xsl" href="teibp.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Title</title>
+         </titleStmt>
+         <publicationStmt>
+            <p part="N">Publication Information</p>
+         </publicationStmt>
+         <sourceDesc default="false">
+            <listWit>
+               <witness xml:id="witM">
+                  <msDesc status="draft">
+                     <msIdentifier>
+                        <country>Italia</country>
+                        <settlement>Firenze</settlement>
+                        <repository>Bibl. Naz. Centrale</repository>
+                        <collection>Magl.</collection>
+                        <idno>VII 926</idno>
+                     </msIdentifier>
+                     <head>
+                        <origDate instant="false">1340-1360</origDate>
+                        <origPlace instant="false">Padua</origPlace>
+                        <title>Ecerinis cum commento</title>
+                     </head>
+                     <msContents>
+                        <msItem>
+                           <locus>f. 2v-12v</locus>
+                           <title>Ecerinis</title>
+                        </msItem>
+                     </msContents>
+
+                     <physDesc>
+                        <objectDesc form="codex">
+                           <supportDesc material="parch">
+                              <!-- In queste sezioni non ho bisogno di inserire un contenuto, ma basta che scelgo uno degli attributi proposti dal sistema -->
+                              <extent>
+                                 <measure>IV + 12 + IV ff.</measure>
+                                 <measure>mm. 140 x 210</measure>
+                              </extent>
+                              <foliation>fasc. 2(6)</foliation>
+                           </supportDesc>
+                        </objectDesc>
+                     </physDesc>
+
+                     <history/>
+                  </msDesc>
+               </witness>
+
+
+            </listWit>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>Ecerinis</head>
+         <castList>
+            <castItem type="role">
+               <role>Ezzelino</role>
+               <roleDesc>tyrannus</roleDesc>
+            </castItem>
+            <castItem type="role">
+               <role>Adeleita</role>
+               <roleDesc>mater</roleDesc>
+            </castItem>
+            <castItem type="role">
+               <role>Alberico</role>
+               <roleDesc>tyrannus</roleDesc>
+            </castItem>
+            <castItem type="role">
+               <role>Nunzio</role>
+            </castItem>
+            <castItem type="role">
+               <role>Lucas</role>
+               <roleDesc>frater</roleDesc>
+            </castItem>
+            <castItem type="role">
+               <role>Coro</role>
+            </castItem>
+         </castList>
+
+         <div type="dialogue" met="trimetro giambico" part="N" org="uniform" sample="complete">
+            <sp who="Adeleita">
+               <speaker>Adel.</speaker>
+               <l n="1">Quodnam <seg xml:id="cruentum" part="N">cruentum</seg> sidus
+                  Arctoo potens</l>
+               <l n="2">regnavit orbe, pestilens <seg xml:id="tantum" part="N">tantum</seg> michi, </l>
+               <l n="3">gnati, nefando flebiles cum vos thoro</l>
+               <l n="4">genui? Patris <app>
+                     <lem>iam</lem>
+                     <rdg wit="alpha3">iam om.</rdg>
+                  </app> detegam falsi dolos</l>
+               <l n="5"><seg xml:id="infausta" part="N">infausta</seg> mater. Non diu tellus nefas</l>
+               <l n="6">latere patitur; durat occultum nichil.</l>
+               <l n="7">audite nullo tempore negandum genus,</l>
+               <l n="8"><seg xml:id="vers8" part="N">devota proles. <seg xml:id="arx" part="N">Arx</seg> in excelso
+                     sedet</seg></l>
+               <l n="9">antiqua colle, longa Romanum vocat</l>
+               <l n="10">etas: in altum <seg xml:id="porrigunt" part="N">porrigunt</seg> tectum trabes,</l>
+               <l n="11">premitque turrim contigua ad austrum <app>
+                     <lem>domus</lem>
+                     <rdg wit="alpha3">domus om.</rdg>
+                  </app>, </l>
+               <l n="12">ventorum et omnis cladis aeree <seg xml:id="capax" part="N">capax</seg>.</l>
+               <l n="13"><seg xml:id="vers13" part="N">Hoc <app>
+                        <lem>accubans</lem>
+                        <rdg wit="alpha2">accumbens</rdg>
+                     </app> ipso <seg xml:id="monachus" part="N">Monachus</seg> olim loco</seg></l>
+               <l n="14">parens <seg xml:id="eburno" part="N">eburno</seg> vester Ecerinus thoro est</l>
+               <l n="15">dormire visus, cuius ad levum latus</l>
+               <l n="16"><seg xml:id="vers16" part="N"><seg xml:id="supina" part="N">supina</seg> iacui. Iam eloqui <app>
+                        <lem>factum</lem>
+                        <rdg wit="beta2">fatum</rdg>
+                     </app>
+                     <seg xml:id="pudet" part="N">pudet</seg>,</seg></l>
+               <l n="17">pavet animus, advenit horror et membra occupat.</l>
+            </sp>
+            <sp who="Ezzelino">
+               <speaker>Ecer.</speaker>
+               <l n="18">Effare, genitrix: grande quodcumque et ferum <app>
+                     <lem>est</lem>
+                     <rdg wit="alpha3">est om.</rdg>
+                  </app></l>
+               <l n="19">audire iuvat.</l>
+            </sp>
+            <sp who="Adeleita">
+               <speaker>Adel.</speaker>
+               <l n="" part="F">Heu me nefandi criminis</l>
+               <l n="20">stupenda qualitas! <app>
+                     <lem>Quasi</lem>
+                     <rdg wit="beta">en</rdg>
+                  </app>
+                  <app>
+                     <lem>ad vultum</lem>
+                     <rdg wit="beta2">ad alterum</rdg>
+                  </app> redit</l>
+               <l n="21">imago facti. Frigore solutum cadit</l>
+               <l n="22">exangue corpus.</l>
+            </sp>
+            <sp who="Ezzelino">
+               <speaker>Ecer.</speaker>
+               <l n="" part="F">Erige labentem cito, </l>
+               <l n="23">Albrice, matrem: <app>
+                     <lem>illusit</lem>
+                     <rdg wit="beta2">illuxit</rdg>
+                  </app>
+                  <app>
+                     <lem>amentem</lem>
+                     <rdg wit="beta2">amente</rdg>
+                  </app> timor.</l>
+               <l n="24">Resperge faciem, sincopim limphis leva. </l>
+               <l n="25">Facile resurget.</l>
+            </sp>
+            <sp who="Alberico">
+               <speaker>Albr.</speaker>
+               <l n="" part="F">Pristinas <app>
+                     <lem>vires</lem>
+                     <rdg wit="alpha3">vires om.</rdg>
+                  </app> habet.</l>
+            </sp>
+            <sp who="Ezzelino">
+               <speaker>Ecer.</speaker>
+               <l n="26">Recolis?</l>
+            </sp>
+            <sp who="Adeleita">
+               <speaker>Adel.</speaker>
+               <l n="" part="F">Recolo, primogenite, primum tui</l>
+               <l n="27">natalis.</l>
+            </sp>
+            <sp who="Ezzelino">
+               <speaker>Ecer.</speaker>
+               <l n="" part="F">O mea mater, id pande ocius.</l>
+            </sp>
+            <sp who="Adeleita">
+               <speaker>Adel.</speaker>
+               <l n="28">Cum prima noctis hora, communis quies,</l>
+               <l n="29">omni teneret ab opere abstractum genus,</l>
+               <l n="30">et ecce ab imo terra mugitum <app>
+                     <lem>dedit</lem>
+                     <rdg wit="beta2">redit</rdg>
+                  </app>,</l>
+               <l n="31">crepuisset ut centrum et foret apertum chaos,</l>
+               <l n="32">altumque versa resonuit celum vice:</l>
+               <l n="33">faciem aeris suphureus invasit vapor,</l>
+               <l n="34">nubemque fecit. Tunc subito fulgur domum </l>
+               <l n="35">lustravit ingens, fulminis ad instar, tono</l>
+               <l n="36">sequente: oletum sparsa per thalamum tulit</l>
+               <l n="37">fumosa nubes. Occupor tunc et premor, </l>
+               <l n="38"><app>
+                     <lem>et</lem>
+                     <rdg wit="alpha2">et om.</rdg>
+                  </app> ecce pudor, adulterum ignotum ferens.</l>
+            </sp>
+            <sp who="Ezzelino">
+               <speaker>Ecer.</speaker>
+               <l n="39">Qualis is adulter, mater?</l>
+            </sp>
+            <sp who="Adeleita">
+               <speaker>Adel.</speaker>
+               <l n="" part="F">Haud tauro minor. </l>
+               <l n="40">Hirsuta aduncis cornibus cervix riget,</l>
+               <l n="41"><app>
+                     <lem>setis coronant hispidis illum</lem>
+                     <rdg wit="alpha3">setis illum coronant hispides</rdg>
+                  </app> iube;</l>
+               <l n="42">sanguinea binis orbibus manat lues, </l>
+               <l n="43">ignemque nares flatibus crebris vomunt:</l>
+               <l n="44">favilla, patulis auribus surgens, salit</l>
+               <l n="45">ab ore spirans; os quoque eructat levem</l>
+               <l n="46">flammam, perennis lambit et barbam focus.</l>
+               <l n="47">Votis potitus talis ut adulter suis</l>
+               <l n="48">implevit uterum Venere letali meum, </l>
+               <l n="49">cum strage cessit victor e thalamo, petens</l>
+               <l n="50">telluris ima; cessit et tellus sibi.</l>
+               <l n="51">Sed heu recepta pertinax nimium Venus</l>
+               <l n="52">incaluit intus viscera exagitans statim;</l>
+               <l n="53">onusque sensit terribile venter tui,</l>
+               <l n="54">Ecerine, <app>
+                     <lem>digna veraque</lem>
+                     <rdg wit="beta1">et digna vera</rdg>
+                  </app> propago patris.</l>
+               <l n="55">Testor supernum numen adversum michi:</l>
+               <l n="56">quos egi abinde <app>
+                     <lem>tunc</lem>
+                     <rdg wit="alpha2">tunc om.</rdg>
+                  </app> gravida menses decem, </l>
+               <l n="57">lacrime fuere, angustie, gemitus, dolor;</l>
+               <l n="58">interna gessit bella visceribus furor.</l>
+               <l n="59">Nec monstruoso, nate, sine partu venis.</l>
+            </sp>
+            <sp who="Ezzelino">
+               <speaker>Ecer.</speaker>
+               <l n="60">Qualis?</l>
+            </sp>
+            <sp who="Adeleita">
+               <speaker>Adel.</speaker>
+               <l n="" part="F">Necis pronosticus ventrem levas,</l>
+               <l n="61"><app>
+                     <lem>cruentus infans</lem>
+                     <rdg wit="alpha3">cruentas in fauces</rdg>
+                  </app>, fronte crudeli minax,</l>
+               <l n="62">terribile visu atroxque portentum indicans.</l>
+               <l n="63">Tu, care fili Albrice, iam video tuos</l>
+               <l n="64">attendis ortus: <app>
+                     <lem>nosce</lem>
+                     <rdg wit="beta2">noscere</rdg>
+                  </app>. Si quicquam scio, </l>
+               <l n="65">tu quoque scies: penitus dubia semper fui</l>
+               <l n="66">quis te <app>
+                     <lem>huic</lem>
+                     <rdg wit="beta3">hoc</rdg>
+                  </app> nephando corpori inseruit pater.</l>
+               <l n="67">A tempore quidem, nate, dicti criminis </l>
+               <l n="68">semper medullas ussit Ethneus calor, </l>
+               <l n="69">viscera malignus abinde torsit spiritus,</l>
+               <l n="70">nec nostra curis <app>
+                     <lem>pectora</lem>
+                     <rdg wit="alpha">corpora</rdg>
+                  </app> absolvit sopor.</l>
+               <l n="71"><app>
+                     <lem>Cum</lem>
+                     <rdg wit="alpha1">Tunc</rdg>
+                  </app> me vigilia vana seu somni quies</l>
+               <l n="72">incerta tenuit, – vera ne prosus negem</l>
+               <l n="73">aut falsa fatear – utitur eodem stupro</l>
+               <l n="74">adulter idem, verus Ecerini pater.</l>
+            </sp>
+            <sp who="Ezzelino">
+               <speaker>Ecer.</speaker>
+               <l n="75">Quid poscis ultra, frater? An tanti pudet,</l>
+               <l n="76">vesane, patris? <app>
+                     <lem>Abnegas</lem>
+                     <rdg wit="alpha2">An negas</rdg>
+                  </app> divum genus?</l>
+               <l n="77">Diis gignimur. Nec stirpe tanta Romulus</l>
+               <l n="78">Rhemusque quondam Marte tolluntur suo. </l>
+               <l n="79">Hic maior est, latissimi regni deus,</l>
+               <l n="80">rex ultionum, cuius imperio luunt</l>
+               <l n="81">penas potentes, principes, reges, duces.</l>
+               <l n="82">Erimus paterno iudices digni foro,</l>
+               <l n="83">si vendicemus operibus regnum patris,</l>
+               <l n="84">cui bella, mortes, exilia, fraudes, doli,</l>
+               <l n="85">perditio et omnis generis humani placent.</l>
+            </sp>
+            <stage type="mixed"><l n="86">[Sic fatus ima parte secessit domus</l>
+               <l n="87">petens latebras, luce et exclusa caput</l>
+               <l n="88">tellure pronus sternit in faciem cadens</l>
+               <l n="89">tunditque solidam dentibus frendens humum</l>
+               <l n="90">patremque seva voce letiferum ciet:]</l></stage>
+            <sp who="Ezzelino">
+               <l n="91">Depulse <app>
+                     <lem>ab astris</lem>
+                     <rdg wit="beta2">abstractis</rdg>
+                  </app>, mane iam lucens polis, </l>
+               <l n="92">pater superbe, triste qui regnum tenes</l>
+               <l n="93">chaos profundi, cuius imperio luunt</l>
+               <l n="94">delicta Manes, excipe ex imo specu, </l>
+               <l n="95">Vulcane, dignas supplicis gnati preces. </l>
+               <l n="96">Te certa et indubitata progenies vocat.</l>
+               <l n="97"><app>
+                     <lem>Potiare</lem>
+                     <rdg wit="alpha2">Paciare</rdg>
+                  </app> me; <app>
+                     <lem>experiare</lem>
+                     <rdg wit="alpha2">experiri</rdg>
+                  </app>, si quicquam potest</l>
+               <l n="98">insita voluntas pectori flagrans meo.</l>
+               <l n="99">Paludis atre lividam testor Stigem,</l>
+               <l n="100">Christum negavi semper exosum michi</l>
+               <l n="101">odique semper nomen inimicum Crucis.</l>
+               <l n="102">Assint ministre facinorum comites michi:</l>
+               <l n="103">suadeat Alecto scelera, Thesiphone explicet,</l>
+               <l n="104">Megera in actus seva prorumpat truces, </l>
+               <l n="105">faveatque ceptis diva Persephone meis. </l>
+               <l n="106">Ingenia prede quisque sollicitus paret, </l>
+               <l n="107">nec infernorum spiritus quisquam vacet;</l>
+               <l n="108">animos ad <app>
+                     <lem>iras</lem>
+                     <rdg wit="beta2">iram</rdg>
+                  </app>, <app>
+                     <lem>odia</lem>
+                     <rdg wit="alpha1">qui odia</rdg>
+                  </app> et invidias citent.</l>
+               <l n="109">Ensis cruenti detur officium michi.</l>
+               <l n="110">Ipse executor finiam lites <app>
+                     <lem>merus</lem>
+                     <rdg wit="alpha1">metus</rdg>
+                  </app>.</l>
+               <l n="111">Nullis tremescet sceleribus fidens manus.</l>
+               <l n="112">Annue, Sathan, et filium talem proba.</l>
+            </sp>
+         </div>
+         <div type="Chorus" met="gliconeo" part="N" org="uniform" sample="complete">
+            <sp who="Chorus">
+               <speaker>Chor.</speaker>
+               <l n="113">Quis vos exagitat furor,</l>
+               <l n="114">o mortale hominum genus?</l>
+               <l n="115"><app>
+                     <lem>Quo vos ambitio vehit?</lem>
+                     <rdg wit="alpha1">Quonam scandere pergitis</rdg>
+                  </app></l>
+               <l n="116"><app>
+                     <lem>Quonam scandere pergitis?</lem>
+                     <rdg wit="alpha1">Quo vos ambitio vehit?</rdg>
+                  </app></l>
+               <l n="117">Nescitis cupidi nimis</l>
+               <l n="118">quo discrimine queritis</l>
+               <l n="119">regni culmina lubrici:</l>
+               <l n="120"><app>
+                     <lem>diros</lem>
+                     <rdg wit="alpha2">duros</rdg>
+                  </app> expetitis metus,</l>
+               <l n="121">mortis continuas minas. </l>
+               <l n="122">Mors est mixta tyrannidi, </l>
+               <l n="123">non est <app>
+                     <lem>morte minor</lem>
+                     <rdg wit="#alpha2 #beta3">minor morte</rdg>
+                  </app> metus.</l>
+               <l n="124">Ast hec dicere quid valet?</l>
+               <l n="125">Sic est: sic animus volat;</l>
+               <l n="126">tunc, cum grandia possidet,</l>
+               <l n="127"><app>
+                     <lem>illis non penitus satur,</lem>
+                     <rdg wit="alpha">cor maiora recogitat</rdg>
+                  </app></l>
+               <l n="128"><app>
+                     <lem>cor maiora recogitat.</lem>
+                     <rdg wit="alpha">illis non penitus satur.</rdg>
+                  </app></l>
+               <l n="129">Vos in iurgia, nobiles,</l>
+               <l n="130">atrox invidie scelus</l>
+               <l n="131"><app>
+                     <lem>ardens elicit,</lem>
+                     <rdg wit="alpha">ardet allicit</rdg>
+                  </app> inficit:</l>
+               <l n="132">numquam quis patitur parem.</l>
+               <l n="133">O quam multa <app>
+                     <lem>potentium</lem>
+                     <rdg wit="alpha1">potentum</rdg>
+                  </app></l>
+               <l n="134">nos et scandala cordibus</l>
+               <l n="135">plebs vilissima iungimus!</l>
+               <l n="136">Illos tollimus altius,</l>
+               <l n="137">hos deponimus infimos.</l>
+               <l n="138">Leges iuraque condimus,</l>
+               <l n="139">post hec condita scindimus.</l>
+               <l n="140">Nobis retia tendimus;</l>
+               <l n="141">Mortale auxilium damus;</l>
+               <l n="142">falsum presidium sumus.</l>
+               <l n="143">Hec demum iugulis luunt.</l>
+               <l n="144">Nos secum miseri trahunt,</l>
+               <l n="145">nos secum cadimus; cadunt. </l>
+               <l n="146">Sic semper rota volvitur:</l>
+               <l n="147">durat perpetuum nichil.</l>
+               <l n="148">En cur Marchia nobilis</l>
+               <l n="149">hec Tarvisia sic fremit.</l>
+               <l n="150">Signis undique classicis</l>
+               <l n="151">clamor bellicus obstrepit;</l>
+               <l n="152">exardet furor excitus,</l>
+               <l n="153"><app>
+                     <lem>gentes</lem>
+                     <rdg wit="alpha2">sontes</rdg>
+                  </app>
+                  <app>
+                     <lem>e</lem>
+                     <rdg wit="beta2">et</rdg>
+                  </app> requie trahit;</l>
+               <l n="154">cives otia deserunt.</l>
+               <l n="155">Dirum pax peperit nephas.</l>
+               <l n="156">Bullit sanguinis impetus </l>
+               <l n="157">et certamina postulat;</l>
+               <l n="158">partes crimina detegunt;</l>
+               <l n="159">ferrum poscitur urbibus, </l>
+               <l n="160">turbat iustitie forum.</l>
+               <l n="161">Verona venit anxius,</l>
+               <l n="162">qui iam fert nova, nuntius.</l>
+            </sp>
+         </div>
+         
+
+
+         <div part="N" org="uniform" sample="complete">
+            <app>
+               <wit xml:id="A2">
+                  <note target="#cruentum" anchored="true">crudelis</note>
+                  <note target="#tantum" anchored="true">solummodo</note>
+                  <note target="#infausta" anchored="true">infelix</note>
+                  <note target="#arx" anchored="true">castrum</note>
+                  <note target="#vers8" anchored="true">Topografizat locum discribendo</note>
+                  <note target="#porrigunt" anchored="true">se</note>
+                  <note target="#capax" anchored="true">susceptiva</note>
+                  <note target="#monachus" anchored="true">infidelix</note>
+                  <note target="#vers13" anchored="true">Declarat quod factum est in illo loco</note>
+                  <note target="#eburno" anchored="true">pretioso</note>
+               </wit>
+            </app>
+         </div>
+        
+        
+         <app>
+            <wit xml:id="M">
+            <gloss type="argumentum">Argumentum. Gnatis patrem mater revellat anxia; / Quo patre dignum se fatetur filius, / A quo malignos spiritus recolligit: / Sacer chorus regna occupantes corripit. / Cum fidus ecce nuncius supervenit / Causasque narrat dissidentis patrie, / fomenta detestabilis tyramnidis: / edit Chorus clamosa per suspiria / tormenta, mortes, carceres, incendia. / Concepta fratres perfidi per singula / predestinant sibi simul magnalia: / Lucas tyramni reprobat proterviam, / sed ille crimen contuetur pertinax: / Padue rebellis conficit cives fame. / Illam furens frustra petitam deserit: / Lombardiam maiore querit impetu, / per quam necatur, ut renarrat Nuncius. / Albricus eius frater execrabilis / cum prole cesus dat quietem gentibus. / Hec in Ecerinide poeta concinit.</gloss>
+            <gloss type="vitaAuct">Albertinus Muxatus Paduanus humili genere parentibus modicis fuit, Federico de Stroph Imperatore Secundo, natus in suburbio Paduane civitatis cui Gadium dicitur, ut antonomasice gaudium illaturus natali solo dictus sit. Statura breviore mediocri, complexione sanus, corpore agilis, gestibus amabilis, vigiliis et laboribus infatigabilis, vita modestus, locutione disertior, ingenio admirabilis, memorie tenacis audacia in emulos formidabilis, in senatu urbis concionibusque logotheta, trans homines sui temporis in re publica creditus, amatus et desiderabilis. Vir hic adolescens ingenti studio solertiaque trivialibus exhaustis, mox prosiliens ad maiora, animi nobilitate provectus ad pretorias causas se contulit. Civilium questionom praticas semitas, combibitis municipalibus legibus, tam brevi edidicit, ut in earum exerciciis persepe iudices causarumque oratores prestantissimos superaverit. Quorum questibus substantias auxit et ex minimis suppetentes viro honerabili facultates conquisivit: proinde ad consulatus urbis et tribunicias potestates fasces et honores publicos prosiluit; quos etsi non peciisset, invitus consequebatur; ad eumdemque fastigium consurrexit, ut se maiorem paremve inter coetaneos plebeios non habuerit. Cum maiorum nobiliorumque prosapiis connubia inniit, insignibus urbis carus, plebeis prepositus. Rebus quoque familiaribus domi compositis, vacante cenobii Sancte Iustine sede, ad Bonifacium Papam Octavum se transtulit; cuius captata benivolentia, abbatiam obtinuit fratremque in abbatem prefici curavit. Hicque abbas ille fuit, qui tali tantoque fratre dignus basilicam impensa inextimabili beatissimis Luce Euvangeliste et Mathie Apostulo construxit preciosisque sarcophagis corpora collocavit, indeque palacia magne molis monasterio construxit. Cum vero Longobardorum rebus adventu Henrici Septimi Imperatoris afflictis Paduana civitas concussa titubaret, virum hunc ut patrie patrem tutoremque ad eum regem legavit. Idemque mox regi acceptus gratusque patrie libertates, privilegia, qualia nulli comunitati petiisse nedum obtinuisse fas fuerat, ab rege munifico impetravit. Mirum quanta cum rege eodem consorteque eius Margarita familiaritate benivolentiaque illi fuerit nec Italico cuiquam se tantum rex reginaque adeundos visendosque exhibuerint: a quibus et prodigalitate quadam liberalissimi regis civitatem Vicencie Paduane civitati adiiciendam subigendamque conquisivit. Verum infaustorum civium vesaniis factisque sic urbi novercantibus huiuscemodi beneficia sprevit inconsulta comunitas ad regis contemptum sese efferens, proh dolor! tanta brevi affecta penitudine, ut vix desertis menibus ab inexpectato rege confugerent: nec ultra remedii quicquam illi fuerit quam eiusdem Muxati subsidiis regem placandum fore iraque avertendum, ne urbis excidio iratus intenderet. Ad quem ex senatus consulto profectus ingenti ausu pene in mortem paratam ire creditus, regem mirabili affatu sibi conciliavit et a civitatis Padue animadversione divertit. Post egregios actus domi militieque, quamquam exercitibus armisque versatus et reipublice irritamentis implicitus, ad binas operas animum aspirantis virtutis applicuit: alteram poeticam, hanc de externe etatis afflictione commemorem, alteram de Henrici huius Septimi Cesaris gestis prosayco dictamine pro memoria posterorum.</gloss>
+            <gloss type="Epigramma">Ad hanc igitur elucidandam Guiçardus gramatice doctor Bononiensis, vir eius temporis prestans, circa libri divisiones et metrorum generum editiones nec non et circa littere expositiones manum adiecit sublimis autoris venia et reservata peritioribus indagine digniore. Hec pro libri epigramate Guiçardus ante posuit: «Condita Troiugenis post diruta Pergama tellus, / in mare fert Patavas unde Timavus aquas, / hunc genuit vatem, tragica qui voce tyramni / edidit Archilocis impia gesta metris. / Prebuit etati vite monimenta future, / ut sit ab externis cautior illa malis».</gloss>
+            <gloss type="inquirenda">In libri huius principio, qui Ecerinis est, ut moris est comentantibus sex solita sunt dicenda: quippe causa efficiens, finalis, formalis, materialis; cui parti philosophye supponatur, et quis sit libri titulus. [causa efficiens] Causa efficiens libri huius autor est Muxatus, ethimologice musis satus vel musis aptus, seu etiam a muxe, quod est perpendiculum celtatorum quo opera metiuntur, quasi sue reipublice semetrum fuerit seu quia iusticiam illesam custodiverit. De origine autem dignitate et attributis iam ex infinitis sursum dicta sufficiant. [causa finalis] Causa finalis eruditio presentium et posterorum ad policias conservandas et tyramnides evitandas seu etiam finis sit tyramnorum vituperatio et detestatio, cum omnis oratio poetica aut laudatio aut vituperatio sit iuxta comentatorem Poetrie Aristotilis. [causa materialis] Causa materialis sive subiectum libri huius Ecerinis idest materia sumpta de gestis Ecerini tyramnorum atrocissimi, et declinetur hec Ecerinis, dis vel dos, quemadmodum hec Eneis, huius Eneidis vel dos, hec Thebais, huius Thebaidis vel dos; patronimicum femeninum est. [causa formalis] Causa formalis duplex: forma tractatus et forma tractandi. Forma tractatus est compositio partium libri; componitur enim ex tribus libri partibus principalibus, ut supra innotuit. Forma autem tractandi est modus agendi, quem tenet autor, et est tragicus a tragos quod est hyrcus, qui olim offerebatur tragoediarum scriptoribus; unde Oratius: «Carmine qui tragico vilem certavit ob hyrcum»: et est carmen iambicum, materie congruens, ab Archiloco inventum, prout idem Oratius: «Archilocum proprio rabies armavit iambo». Competit quidem tragicus tractatus alte materie de miseriis et ruinis insignium et excellentum, sicut idem Oratius: «Res geste regumque ducumque et tristia bella», que etiam denotari alio carminum genere possunt, scilicet heroo, ut idem Oratius contestatur, quamquam Grecarum tragediarum scriptores hoc genere iambico usi sint: «hunc soci cepere pedem grandesque coturni» — per socos comicorum calciamentum et per coturnum tragicorum calciamentum — et Seneca etiam in suis tragediis latino sermone; unde Boetius: «quid aliud clamor tragediarum deflet nisi fortunam indiscreto ictu felicia regna versantem?». Veruntamen, evidentia tragice doctrine ne lateat ignorantes, attendendum est quod Oratius de se dicit: «Libera per vacuum posui vestigia princeps»; et subiungit: «Parios ego primus iambos ostendi Latio numerosque animosque secutus Archiloci non res et agentia verba Licanben». Et cum dicit: «Hunc ego non alio dictum prius ore Latinis vulgavi fidicen», innuitur nobis, quod metrum accipens ab Archiloco primus in latinum id deduxit ausus idem secundum aliquid variare: et hoc est quod statim ibidem addit: «Ac ne me foliis idem brevioribus ornes, Quod timui mutare modos» etc. Huius artis metrice imitationem esse factam amodo primo percipimus evidenter et per hoc quod dicitur ab eodem: «Parios ego primus iambos». Constat enim quattuor iambos ad invicem coniunxisse, ex duobus iambis metrum denominantes quod ex IIII° iambis metrum appellabant. Verum quod talis compositio nimis celera resultabat, interseruerunt spondeum vel pedem alium sibi equipollentem ut tardior resultaret ad aures; quam demum compositionem trimetrum appellarunt. Ex hac quippe iambice compositionis commixtione vates iste insignis hanc tragediam depinxit, in tragediis suis Senecam consecutus. [pars philosophiae] Parti philosophye supponitur ethice; nam bonis exemplis virtus accenditur, ut illud poeticum: «Proficit exemplo meriti cautela docendi». Cum enim iuxta Philosophum, primo Ethici, virtus intellectualis seu etiam moralis homini natura non insit, sed per doctrinam et experientiam crescat et augeatur, sic bonorum imitatione morum et malorum reiectione virtus gignitur et augetur. Nec minus et theologe supponitur, quia poetica est que profecto ars divina; sicut enim Philosophus dicit in principio Methaphysice: «poete fuerunt primi theologizantes». Et hec satis ostendit poeta iste in fine huius operis ubi dicit: «Hec perpetuo durat in evo» et cetera. [titulus] Libri titulus: Albertini Musati poete Paduani tragedia Ecerinis incipit. Gui(çardus).</gloss>
+            <gloss type="storia">Ad evidentiam huius operis poetici et vere hystorie notitia opus est. Ecerinus Balbus de Honaria Paduani districtus genuit Ecerinum Monachum; Ecerinus autem Monachus genuit hunc Ecerinum tercium, supra Neronem sevissimum, in Romano, opido Tarvisine civitatis, ex Adeleyta, orta ex prosapia Comitum de Mangone Tuscorum, quos altero prenomine Rabidos nominavit antiquitas. Hec Adeleyta, huius tercii Ecerini mater et Albrici fratris eiusdem, erudita litteris a primis annis celum et sidera studuit intueri institutis astronomicis non ignara. Eademque et ex geumancie ac nigromancie traditionibus spirituum presidiis multa eventura viro et filiis nunciavit, inter que paulo ante diem sui obitus tria carmina edidit, que suis tradidit observanda; verum numine potentiore delusi in ea fatalia incidere: «Heu quia fata parant lacrimosos pandere partus, / gentem Marchisiam fratres abolere potentes; / viderit Axanum, concludent castra Çenonum». In his versibus compendiose et futurat eorum potentias et loca mortis eorum sub ambigua duplicitate, ut Phoenissis olim mos erat, portendit. Hii fratres partem Ecclesie, que Marchisiana a Marchionibus Estensibus dicebatur, conculcantes ferme per totam Longobardiam subegere, quos tandem excelsa Divinitas, Ecerinum scilicet apud Caxanum pontem Adue in Longobardia et Albricum apud castrum Sancti Çenonis, circumvenit et in mortes coegit. Memorabile quoque est quod dum Ecerinus versu matris conterritus Baxanum, castrum in finibus Padue et Tarvisii, evitasset, in ipsum non abinde ingressus, in alium eiusdem terminationis locum morte circumventus est, prout hic diligentissime autor insinuat. Utque pateat quibus fautoribus fratres hii, subversis hostibus, ad principatus urbium pervenerint, per autorem succincte traditur. Insinuat enim quam preclare quod dum Verona anno Domini nostri Yesu Christi millesimo ducentesimo septimo per Veronenses comuniter regeretur, constat tum ibi fuisse duas civium factiones, scilicet Comitum Sancti Bonifacii et Monticulorum. Erant enim Monticuli cives nobiles Veronenses suffulti ab Ecerino, cuius gesta in hoc opere pertractantur. Contigit quidem ut, Açone Marchione Estensi civitatem regente comuniter, Ecerinus clandestina coniuratione cum Monticulis de castro suo Romano progressus per vias nivosas et saxosas Veronam perrexit et multa militum peditumque caterva incautum expulit Marchionem; cuius expulsionis patratio malorum omnium Marchie Tarvisine nec non et totius Longobardie inicium secum tulit. Nam, collectis presidiis presertim Mantuanorum, Marchio Veronam contendit et in urbem a complicibus sue factionis acceptus cum Ecerino et Monticulis acre prelium inniit in campo, qui Brayda dicitur, illosque victos fugavit ad arcem lacus Garde, quos tandem Otto dux Saxonum Alamanie rex in civitatem restituit. Restituti vero ab Ottonte Monticuli, Ecerino et Sallinguerra Ferarense coadiuti, Comitem eumdem Sancii Bonifacii cum complicibus Veronensibus factionis eiusdem expulerunt, quorum exilium in hec nostra tempora perduravit.</gloss>
+            <gloss type="storia">Divina autem consentiente potentia, que hypocritas regnare permittit ut sua peccata deplorent, anno Domini nostri millesimo ducentesimo trigesimo septimo Federicus Imperator Secundus e Longobardia in Alamaniam transiturus Geboardum principem suum cum Ecerino consultore vicarium in civitate Vicentie constituit ac reliquit; qui Geboardus consilio Ecerini astu bellico nocturno tempore copiis suis per vadum Terre Dure fluvium, qui de Padua ad Montem Silicem allabitur, transgressus, debellatis militibus ducentis Paduanis, qui apud Carturiam erant, partim cesis partimque captis, ad castrum Montis Silicis properavit, ubi, nulla resistentia, per factionem Pissis de Paltoneriis et aliorum partem Imperii foventium assumptus extitit intra castrum; dumque ibi persisteret, cum potentioribus Paduanorum primatibus de civitate prodenda tractatum habuit; tandemque ere dato librarum sexdecim milium bagatine monete, Ecerinus in civitatem Padue susceptus est, in qua omnem obtinuit potestatem. Deus hic in brevi signum ultionis ostendit quod Ecerinus iamdudum sitiens sanguinem Paduanum primates illos sexdecim, proditionis autores, et mortis primates effecit; quos omnes principio sue tyramnidis trucidavit. Et hec de hystoria veracissima dicta sufficiant quantum ad tyramni huius ostensionem ascensus; de statu vero eiusque descensu satis elucebit in textu.</gloss>
+            <gloss type="divisio">Presentis libri materia in tres partes principaliter dividitur, que possunt libri tres merito nuncupari; nam in prima tangitur Ecerini origo et fratris eius Albrici et ipsorum ad dominatus progressus; in secunda status sue tiramnice pravitatis; in tercia status eorum declinatio cum interitu utriusque, Secunda incipit ibi: «Criste qui celis» etc.; tertia autem ibi: «Audi negandum» etc. Iterum prima in duas, quia primo ponitur predictorum ortus, in secunda narratur causa ipsorum ascensus ad dominatus; secunda ibi: «Excelse mundi» etc. Prima in duas, quia primo ponit ortum predictum, in secunda invehit in humanum genus ambitiosum et avidum ad causas dandas tiramnicis principatibus per quos incidunt in ruinas: secunda ibi: «Quis vos exagitat furor» etc. Sed hec prima in tres dividitur; nam in prima sub exclamatione tragica Adeleyta mater prodit in generali nefandas conceptiones et partus; in secunda describit locum concipiendi; in tercia narrat modum et causam diabolice generationis. Secunda ibi: «Arx in excelso sedet» etc.; tercia ibi: «Hec accubans» etc.</gloss>
+            <gloss type="metaletteratura">Circa primum est advertendum quod quemadmodum Virgilius redditur poeta ab habitu fingendi miranda, quamquam non vera, verissimilia tamen, ut in fictione pastorum in Bucolicis declaratur, sub quorum altercatione status poetarum innuitur varius sub Augusto; et similiter Ovidius novarum formarum transfigurationes fictis fabulis denotavit, ut per serpentem septemplicem ignorantiam, per Medusam luxuriam, per Orpheum inconstantiam, qui, flexis retro luminibus, Euridicem perdidit; sicut et ex Marte genitos finxerunt Remum et Romulum finxerunt [sic] poete generaliter omnes; sic poeta iste mirifico modo conceptus et partus atrocium fratrum finxit, ut a demone conceptorum: ex quo se poetam aperit et profitetur. Est enim poeta qui virtutes persuadet et vitia detestatur etsi persepe non veris, tamen verisimilibus, argumentis. Ex quo sequitur quod versuum apta compositio, ut instrumentum, non tamen ut forma immediata, poetam demonstrat.</gloss>
+            <gloss type="metrica">Genus metri, quo regulariter utitur autor in hoc opere est trimetrum iambicum monocolos monostrophos; et dicitur monocolos a monos quod est unum et colon quod est membrum; et monostrophos similiter a monos quod est unum et strophos quod est conversio; inde monocolos monostrophos dicitur metrum quod habet unum membrum et unam varietatem metri. Et per simile dicitur dicolos distrophos, tricolos tristrophos, tetracolos tetrastrophos; cuiusmodi metrorum genera inveniuntur in Odis Oratii et in multis Boetii carminum varietatibus. Dicitur trimetrum a numero pedum; sex enim habet pedes, qui, coniuncti bini, tres faciunt combinationes singulos pedes habentes. Iambicum dicitur a pede iambo predominante in hoc genere metri; et in hoc Anneum Senecam secutus qui in suis tragediis hoc genere reguiariter usus est, quamvis ab utroque et alia metrorum genera inserantur, ut infra patebit. Huius quoque carminis ordo talis est. Nam cum ex sex pedibus constet, primus pes potest esse iambus vel spondeus vel tribracus vel datilus vel anapestus vel quandoque proceleumaticus, sed rarissime: secundus pes debet esse omnino iambus, licet interdum pro eo subeat tribracus, prout Oratius de hoc genere metri loquens: «Sed ne de sede secunda cederet aut quarta» etc.; equipollet enim ei tribracus propter tria tempora que habet, et idcirco substitutus loco eius; sic enim poscit eius metri concinitas. Tercius similis est primo, excepto proceleumatico qui non intervenit in tercio. Quartus semper iambus vel tribracus, idest similis secundo. Quintus potest esse spondeus vel anapestus. Sextus pes semper iambus vel pirrichius.</gloss>
+            </wit>
+         </app>
+      </body>
+   </text>
+</TEI>
