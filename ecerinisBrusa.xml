@@ -48,7 +48,31 @@
                      <history/>
                   </msDesc>
                </witness>
-
+               
+               <!--  AGGIUNTI NELLA LISTA DI TESTIMONI <listWit> TUTTI I TESTIMONI <witness>.
+                     PER OGNUNO SI PUÒ SPECIFICARE, ALL'INTERNO DI <witness> LA DESCRIZIONE DEL MANOSCRITTO <msDesc>
+                     OPPURE DELLA STAMPA <bibl>.
+                     LA TRASFORMAZIONE DI CAYLESS USA L'ATTRIBUTO @n PER VISUALIZZARE LA SIGLA NELL'HTML
+                     
+                     NEL TESTO, OGNI <rdg> DEVE AVERE L'ATTRIBUTO @wit CHE RINVIA AD UN MANOSCRITTO DI QUESTA LISTA,
+                     CON IL NOME PRECEDUTO DA # (SENZA L'ASTERISCO NON FUNZIONA)
+               -->
+               
+               <witness xml:id="alpha" n="Α"></witness>
+               
+               <witness xml:id="alpha1" n="Α1"></witness>
+               
+               <witness xml:id="alpha2" n="Α2"></witness>
+               
+               <witness xml:id="alpha3" n="Α3"></witness>
+               
+               <witness xml:id="beta" n="Β"></witness>
+               
+               <witness xml:id="beta1" n="Β1"></witness>
+               
+               <witness xml:id="beta2" n="Β2"></witness>
+               
+               <witness xml:id="beta3" n="Β3"></witness>
 
             </listWit>
          </sourceDesc>
@@ -91,7 +115,7 @@
                <l n="3">gnati, nefando flebiles cum vos thoro</l>
                <l n="4">genui? Patris <app>
                      <lem>iam</lem>
-                     <rdg wit="alpha3">iam om.</rdg>
+                     <rdg wit="#alpha3">iam om.</rdg>
                   </app> detegam falsi dolos</l>
                <l n="5"><seg xml:id="infausta" part="N">infausta</seg> mater. Non diu tellus nefas</l>
                <l n="6">latere patitur; durat occultum nichil.</l>
@@ -102,18 +126,18 @@
                <l n="10">etas: in altum <seg xml:id="porrigunt" part="N">porrigunt</seg> tectum trabes,</l>
                <l n="11">premitque turrim contigua ad austrum <app>
                      <lem>domus</lem>
-                     <rdg wit="alpha3">domus om.</rdg>
+                     <rdg wit="#alpha3">domus om.</rdg>
                   </app>, </l>
                <l n="12">ventorum et omnis cladis aeree <seg xml:id="capax" part="N">capax</seg>.</l>
                <l n="13"><seg xml:id="vers13" part="N">Hoc <app>
                         <lem>accubans</lem>
-                        <rdg wit="alpha2">accumbens</rdg>
+                        <rdg wit="#alpha2">accumbens</rdg>
                      </app> ipso <seg xml:id="monachus" part="N">Monachus</seg> olim loco</seg></l>
                <l n="14">parens <seg xml:id="eburno" part="N">eburno</seg> vester Ecerinus thoro est</l>
                <l n="15">dormire visus, cuius ad levum latus</l>
                <l n="16"><seg xml:id="vers16" part="N"><seg xml:id="supina" part="N">supina</seg> iacui. Iam eloqui <app>
                         <lem>factum</lem>
-                        <rdg wit="beta2">fatum</rdg>
+                        <rdg wit="#beta2">fatum</rdg>
                      </app>
                      <seg xml:id="pudet" part="N">pudet</seg>,</seg></l>
                <l n="17">pavet animus, advenit horror et membra occupat.</l>
@@ -122,7 +146,7 @@
                <speaker>Ecer.</speaker>
                <l n="18">Effare, genitrix: grande quodcumque et ferum <app>
                      <lem>est</lem>
-                     <rdg wit="alpha3">est om.</rdg>
+                     <rdg wit="#alpha3">est om.</rdg>
                   </app></l>
                <l n="19">audire iuvat.</l>
             </sp>
@@ -131,11 +155,11 @@
                <l n="" part="F">Heu me nefandi criminis</l>
                <l n="20">stupenda qualitas! <app>
                      <lem>Quasi</lem>
-                     <rdg wit="beta">en</rdg>
+                     <rdg wit="#beta">en</rdg>
                   </app>
                   <app>
                      <lem>ad vultum</lem>
-                     <rdg wit="beta2">ad alterum</rdg>
+                     <rdg wit="#beta2">ad alterum</rdg>
                   </app> redit</l>
                <l n="21">imago facti. Frigore solutum cadit</l>
                <l n="22">exangue corpus.</l>
@@ -145,11 +169,11 @@
                <l n="" part="F">Erige labentem cito, </l>
                <l n="23">Albrice, matrem: <app>
                      <lem>illusit</lem>
-                     <rdg wit="beta2">illuxit</rdg>
+                     <rdg wit="#beta2">illuxit</rdg>
                   </app>
                   <app>
                      <lem>amentem</lem>
-                     <rdg wit="beta2">amente</rdg>
+                     <rdg wit="#beta2">amente</rdg>
                   </app> timor.</l>
                <l n="24">Resperge faciem, sincopim limphis leva. </l>
                <l n="25">Facile resurget.</l>
@@ -158,7 +182,7 @@
                <speaker>Albr.</speaker>
                <l n="" part="F">Pristinas <app>
                      <lem>vires</lem>
-                     <rdg wit="alpha3">vires om.</rdg>
+                     <rdg wit="#alpha3">vires om.</rdg>
                   </app> habet.</l>
             </sp>
             <sp who="Ezzelino">
@@ -180,7 +204,7 @@
                <l n="29">omni teneret ab opere abstractum genus,</l>
                <l n="30">et ecce ab imo terra mugitum <app>
                      <lem>dedit</lem>
-                     <rdg wit="beta2">redit</rdg>
+                     <rdg wit="#beta2">redit</rdg>
                   </app>,</l>
                <l n="31">crepuisset ut centrum et foret apertum chaos,</l>
                <l n="32">altumque versa resonuit celum vice:</l>
@@ -191,7 +215,7 @@
                <l n="37">fumosa nubes. Occupor tunc et premor, </l>
                <l n="38"><app>
                      <lem>et</lem>
-                     <rdg wit="alpha2">et om.</rdg>
+                     <rdg wit="#alpha2">et om.</rdg>
                   </app> ecce pudor, adulterum ignotum ferens.</l>
             </sp>
             <sp who="Ezzelino">
@@ -204,7 +228,7 @@
                <l n="40">Hirsuta aduncis cornibus cervix riget,</l>
                <l n="41"><app>
                      <lem>setis coronant hispidis illum</lem>
-                     <rdg wit="alpha3">setis illum coronant hispides</rdg>
+                     <rdg wit="#alpha3">setis illum coronant hispides</rdg>
                   </app> iube;</l>
                <l n="42">sanguinea binis orbibus manat lues, </l>
                <l n="43">ignemque nares flatibus crebris vomunt:</l>
@@ -220,12 +244,12 @@
                <l n="53">onusque sensit terribile venter tui,</l>
                <l n="54">Ecerine, <app>
                      <lem>digna veraque</lem>
-                     <rdg wit="beta1">et digna vera</rdg>
+                     <rdg wit="#beta1">et digna vera</rdg>
                   </app> propago patris.</l>
                <l n="55">Testor supernum numen adversum michi:</l>
                <l n="56">quos egi abinde <app>
                      <lem>tunc</lem>
-                     <rdg wit="alpha2">tunc om.</rdg>
+                     <rdg wit="#alpha2">tunc om.</rdg>
                   </app> gravida menses decem, </l>
                <l n="57">lacrime fuere, angustie, gemitus, dolor;</l>
                <l n="58">interna gessit bella visceribus furor.</l>
@@ -240,29 +264,29 @@
                <l n="" part="F">Necis pronosticus ventrem levas,</l>
                <l n="61"><app>
                      <lem>cruentus infans</lem>
-                     <rdg wit="alpha3">cruentas in fauces</rdg>
+                     <rdg wit="#alpha3">cruentas in fauces</rdg>
                   </app>, fronte crudeli minax,</l>
                <l n="62">terribile visu atroxque portentum indicans.</l>
                <l n="63">Tu, care fili Albrice, iam video tuos</l>
                <l n="64">attendis ortus: <app>
                      <lem>nosce</lem>
-                     <rdg wit="beta2">noscere</rdg>
+                     <rdg wit="#beta2">noscere</rdg>
                   </app>. Si quicquam scio, </l>
                <l n="65">tu quoque scies: penitus dubia semper fui</l>
                <l n="66">quis te <app>
                      <lem>huic</lem>
-                     <rdg wit="beta3">hoc</rdg>
+                     <rdg wit="#beta3">hoc</rdg>
                   </app> nephando corpori inseruit pater.</l>
                <l n="67">A tempore quidem, nate, dicti criminis </l>
                <l n="68">semper medullas ussit Ethneus calor, </l>
                <l n="69">viscera malignus abinde torsit spiritus,</l>
                <l n="70">nec nostra curis <app>
                      <lem>pectora</lem>
-                     <rdg wit="alpha">corpora</rdg>
+                     <rdg wit="#alpha">corpora</rdg>
                   </app> absolvit sopor.</l>
                <l n="71"><app>
                      <lem>Cum</lem>
-                     <rdg wit="alpha1">Tunc</rdg>
+                     <rdg wit="#alpha1">Tunc</rdg>
                   </app> me vigilia vana seu somni quies</l>
                <l n="72">incerta tenuit, – vera ne prosus negem</l>
                <l n="73">aut falsa fatear – utitur eodem stupro</l>
@@ -273,7 +297,7 @@
                <l n="75">Quid poscis ultra, frater? An tanti pudet,</l>
                <l n="76">vesane, patris? <app>
                      <lem>Abnegas</lem>
-                     <rdg wit="alpha2">An negas</rdg>
+                     <rdg wit="#alpha2">An negas</rdg>
                   </app> divum genus?</l>
                <l n="77">Diis gignimur. Nec stirpe tanta Romulus</l>
                <l n="78">Rhemusque quondam Marte tolluntur suo. </l>
@@ -293,7 +317,7 @@
             <sp who="Ezzelino">
                <l n="91">Depulse <app>
                      <lem>ab astris</lem>
-                     <rdg wit="beta2">abstractis</rdg>
+                     <rdg wit="#beta2">abstractis</rdg>
                   </app>, mane iam lucens polis, </l>
                <l n="92">pater superbe, triste qui regnum tenes</l>
                <l n="93">chaos profundi, cuius imperio luunt</l>
@@ -302,10 +326,10 @@
                <l n="96">Te certa et indubitata progenies vocat.</l>
                <l n="97"><app>
                      <lem>Potiare</lem>
-                     <rdg wit="alpha2">Paciare</rdg>
+                     <rdg wit="#alpha2">Paciare</rdg>
                   </app> me; <app>
                      <lem>experiare</lem>
-                     <rdg wit="alpha2">experiri</rdg>
+                     <rdg wit="#alpha2">experiri</rdg>
                   </app>, si quicquam potest</l>
                <l n="98">insita voluntas pectori flagrans meo.</l>
                <l n="99">Paludis atre lividam testor Stigem,</l>
@@ -319,15 +343,15 @@
                <l n="107">nec infernorum spiritus quisquam vacet;</l>
                <l n="108">animos ad <app>
                      <lem>iras</lem>
-                     <rdg wit="beta2">iram</rdg>
+                     <rdg wit="#beta2">iram</rdg>
                   </app>, <app>
                      <lem>odia</lem>
-                     <rdg wit="alpha1">qui odia</rdg>
+                     <rdg wit="#alpha1">qui odia</rdg>
                   </app> et invidias citent.</l>
                <l n="109">Ensis cruenti detur officium michi.</l>
                <l n="110">Ipse executor finiam lites <app>
                      <lem>merus</lem>
-                     <rdg wit="alpha1">metus</rdg>
+                     <rdg wit="#alpha1">metus</rdg>
                   </app>.</l>
                <l n="111">Nullis tremescet sceleribus fidens manus.</l>
                <l n="112">Annue, Sathan, et filium talem proba.</l>
@@ -340,18 +364,18 @@
                <l n="114">o mortale hominum genus?</l>
                <l n="115"><app>
                      <lem>Quo vos ambitio vehit?</lem>
-                     <rdg wit="alpha1">Quonam scandere pergitis</rdg>
+                     <rdg wit="#alpha1">Quonam scandere pergitis</rdg>
                   </app></l>
                <l n="116"><app>
                      <lem>Quonam scandere pergitis?</lem>
-                     <rdg wit="alpha1">Quo vos ambitio vehit?</rdg>
+                     <rdg wit="#alpha1">Quo vos ambitio vehit?</rdg>
                   </app></l>
                <l n="117">Nescitis cupidi nimis</l>
                <l n="118">quo discrimine queritis</l>
                <l n="119">regni culmina lubrici:</l>
                <l n="120"><app>
                      <lem>diros</lem>
-                     <rdg wit="alpha2">duros</rdg>
+                     <rdg wit="#alpha2">duros</rdg>
                   </app> expetitis metus,</l>
                <l n="121">mortis continuas minas. </l>
                <l n="122">Mors est mixta tyrannidi, </l>
@@ -364,22 +388,22 @@
                <l n="126">tunc, cum grandia possidet,</l>
                <l n="127"><app>
                      <lem>illis non penitus satur,</lem>
-                     <rdg wit="alpha">cor maiora recogitat</rdg>
+                     <rdg wit="#alpha">cor maiora recogitat</rdg>
                   </app></l>
                <l n="128"><app>
                      <lem>cor maiora recogitat.</lem>
-                     <rdg wit="alpha">illis non penitus satur.</rdg>
+                     <rdg wit="#alpha">illis non penitus satur.</rdg>
                   </app></l>
                <l n="129">Vos in iurgia, nobiles,</l>
                <l n="130">atrox invidie scelus</l>
                <l n="131"><app>
                      <lem>ardens elicit,</lem>
-                     <rdg wit="alpha">ardet allicit</rdg>
+                     <rdg wit="#alpha">ardet allicit</rdg>
                   </app> inficit:</l>
                <l n="132">numquam quis patitur parem.</l>
                <l n="133">O quam multa <app>
                      <lem>potentium</lem>
-                     <rdg wit="alpha1">potentum</rdg>
+                     <rdg wit="#alpha1">potentum</rdg>
                   </app></l>
                <l n="134">nos et scandala cordibus</l>
                <l n="135">plebs vilissima iungimus!</l>
@@ -402,11 +426,11 @@
                <l n="152">exardet furor excitus,</l>
                <l n="153"><app>
                      <lem>gentes</lem>
-                     <rdg wit="alpha2">sontes</rdg>
+                     <rdg wit="#alpha2">sontes</rdg>
                   </app>
                   <app>
                      <lem>e</lem>
-                     <rdg wit="beta2">et</rdg>
+                     <rdg wit="#beta2">et</rdg>
                   </app> requie trahit;</l>
                <l n="154">cives otia deserunt.</l>
                <l n="155">Dirum pax peperit nephas.</l>
